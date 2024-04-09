@@ -1,7 +1,15 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
-import classes from "./Header.module.css";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { useContext, useState } from "react";
+import { GlobalContext } from "../../App";
 
 function Header() {
+
+  const {updateShowCart} = useContext(GlobalContext);
+  
+  const visibleCart= ()=>{
+    updateShowCart(true);
+  }
+  
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -11,13 +19,11 @@ function Header() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="store">Store</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
+            <Nav.Link><Button onClick={visibleCart}>Cart</Button></Nav.Link>
           </Nav>
+          
         </Container>
       </Navbar>
-
-      <div className={classes.secondHeader}>
-        <h1>The Generics</h1>
-      </div>
     </>
   );
 }

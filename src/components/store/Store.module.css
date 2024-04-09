@@ -1,0 +1,41 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.mainContainer h1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.row{
+    margin: 30px;
+}
+.card{
+    width: 15rem;
+    border: none;
+}
+.album{
+    background-color: transparent;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    background-color: rgb(157, 207, 230);
+    border-radius: 0;
+    border: 0;
+    font-weight: 700;
+}

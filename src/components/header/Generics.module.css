@@ -1,0 +1,38 @@
+.secondHeader{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 30px;
+}
+
+.secondHeader h1{
+    font-size:80px;
+    font-weight: 800;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.showalbum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.album{
+    padding: 20px;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 0;
+    font-size: 25px;
+    border: 2px solid rgb(97, 193, 214);
+}
+
+.play{
+    padding: 20px;
+    border-radius: 30rem;
+    border: 2px solid rgb(97, 193, 214);
+    color: rgb(97, 193, 214);
+    background-color: transparent;
+}

@@ -1,0 +1,38 @@
+.homeMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.homeMain h1{
+    font-weight: 800;
+}
+
+.mainTable{
+    width: 60%;
+    margin: 30px;
+}
+
+.mainTable tr{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.mainTable td{
+    padding: 14px;
+}
+
+.title, .city{
+    color: gray;
+}
+
+.mainTable Button{
+    background-color: rgb(97, 193, 214);
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 0;
+    width: 100%;
+}

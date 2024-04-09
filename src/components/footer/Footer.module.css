@@ -1,0 +1,30 @@
+.mainFooter{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(97, 193, 214);
+    padding: 20px 100px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainFooter h1{
+    font-weight: 800;
+    font-size: 4rem;
+    color: white;
+}
+
+.icons Button{
+    background-color: transparent;
+    border: 0;
+    align-items: center;
+    margin: 20px;
+}
+
+.youtube{
+    color: red;
+}
+
+.facebook, .twitter{
+    color: rgb(29, 100, 155);
+}

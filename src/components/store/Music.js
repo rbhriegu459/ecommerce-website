@@ -1,7 +1,8 @@
 import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import classes from './Store.module.css';
 
-function Music() {
+function Music(props) {
+  
   const productsArr = [
     {
       title: "Colors",
@@ -32,6 +33,12 @@ function Music() {
     },
   ];
 
+  const handleCart= (i) =>{
+    props.totalItems();
+    return props.addItemToCart(productsArr[i]);
+  }
+
+
   return (
     <>
       <Container className={classes.mainContainer}>
@@ -46,7 +53,7 @@ function Music() {
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body className={classes.body}>
                   <Card.Text>${item.price}</Card.Text>
-                  <Button className={classes.button}>Add To Cart</Button>
+                  <Button className={classes.button} onClick={()=>{handleCart(i)}}>Add To Cart</Button>
                 </Card.Body>
               </Card>
             </Col>

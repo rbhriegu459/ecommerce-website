@@ -13,9 +13,11 @@ export const GlobalContext = createContext();
 function App() {
   const [showAlbum, updateShowAlbum] = useState(false);
   const [showCart, updateShowCart] = useState(false);
+  const [cartItems, updateCartItems] = useState([]);
+  const [totalItems, updateTotalItems] = useState(0);
 
   return (
-    <GlobalContext.Provider value={{showAlbum, updateShowAlbum, showCart, updateShowCart}}>
+    <GlobalContext.Provider value={{showAlbum, updateShowAlbum, showCart, updateShowCart, cartItems, updateCartItems, totalItems, updateTotalItems}}>
       <Header/>
       <Cart />
       <BrowserRouter>

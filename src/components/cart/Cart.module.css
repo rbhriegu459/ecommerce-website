@@ -1,7 +1,10 @@
 .main{
     display: flex;
+    width: 30%;
     align-items: end;
-    width: 100%;
+    background-color: white;
+    margin-right: 0;
+    position: fixed;
 }
 
 .heading{
@@ -19,15 +22,14 @@
 }
 
 .cartPanel{
-    width: 40%;
     display: flex;
     flex-direction: column;
     padding: 30px;
     align-items: end;
 }
 .cartImage{
-    height: 10%;
-    width: 10%;
+    height: 40%;
+    width: 40%;
     border-radius: 10px;
     margin: 4px;
 }

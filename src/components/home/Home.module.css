@@ -5,6 +5,7 @@
     align-items: center;
     margin: 50px;
     font-family: 'Times New Roman', Times, serif;
+    position:relative;
 }
 
 .homeMain h1{

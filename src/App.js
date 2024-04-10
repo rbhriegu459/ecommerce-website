@@ -16,9 +16,24 @@ function App() {
   const [cartItems, updateCartItems] = useState([]);
   const [totalItems, updateTotalItems] = useState(0);
 
+  const [musicData, updateMusicData] = useState([]);
+
   return (
-    <GlobalContext.Provider value={{showAlbum, updateShowAlbum, showCart, updateShowCart, cartItems, updateCartItems, totalItems, updateTotalItems}}>
-      <Header/>
+    <GlobalContext.Provider
+      value={{
+        showAlbum,
+        updateShowAlbum,
+        showCart,
+        updateShowCart,
+        cartItems,
+        updateCartItems,
+        totalItems,
+        updateTotalItems,
+        musicData,
+        updateMusicData,
+      }}
+    >
+      <Header />
       <Cart />
       <BrowserRouter>
         <Routes>
